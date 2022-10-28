@@ -67,3 +67,7 @@ set noshowmode
 " Remove trailing whitespaces automatically on saving
 " https://vim.fandom.com/wiki/Remove_unwanted_spaces#Automatically_removing_all_trailing_whitespace
 autocmd BufWritePre * :%s/\s\+$//e
+
+" Jump to the last position when reopening a file
+" (source: Ubuntu's /usr/share/vim/vimrc file)
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
