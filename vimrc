@@ -67,6 +67,10 @@ set noshowmode
 " https://vim.fandom.com/wiki/Remove_unwanted_spaces#Automatically_removing_all_trailing_whitespace
 autocmd BufWritePre * :%s/\s\+$//e
 
+" Use two spaces for indentation and tabs in YAML files
+" https://www.arthurkoziel.com/setting-up-vim-for-yaml/
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
 " Jump to the last position when reopening a file
 " (source: Ubuntu's /usr/share/vim/vimrc file)
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
