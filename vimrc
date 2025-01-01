@@ -18,7 +18,6 @@ Plugin 'VundleVim/Vundle.vim'
 " Keep Plugin commands between vundle#begin/end.
 Plugin 'ekalinin/dockerfile.vim'
 Plugin 'pearofducks/ansible-vim'
-Plugin 'stephpy/vim-yaml'
 Plugin 'hashivim/vim-terraform'
 Plugin 'itchyny/lightline.vim'
 Plugin 'tpope/vim-fugitive'
