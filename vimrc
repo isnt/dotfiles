@@ -21,6 +21,7 @@ Plugin 'pearofducks/ansible-vim'
 Plugin 'hashivim/vim-terraform'
 Plugin 'itchyny/lightline.vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'dense-analysis/ale'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
