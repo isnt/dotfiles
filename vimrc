@@ -49,9 +49,15 @@ set hlsearch
 
 " Print the line number in front of each line
 set number
+" Highlight the current line with bold instead of the default underline
+hi CursorLineNr cterm=bold
 
 " Highlight the current line
 set cursorline
+
+" Do not use the default uderline for highlighting the current line, just use
+" a darkgrey background
+hi CursorLine cterm=NONE ctermbg=darkgrey
 
 " Show some lines above and below the cursor to make more context visible
 set scrolloff=5
