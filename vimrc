@@ -60,7 +60,7 @@ set scrolloff=5
 " Don't wrap lines longer than the width of the window
 set nowrap
 
-" lightline plugin configuration:
+" lightline plugin configuration
 set laststatus=2
 set noshowmode
 
